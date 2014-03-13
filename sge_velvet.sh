@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash -x
 # An example execution script to automate assembly using velvet
 # and subsequent processing of the contigs using process_contigs.pl
 #

@@ -13,12 +13,12 @@
 #$ -pe smp 4 
 #$ -l virtual_free=4G
 
-ARGS=4         
+ARGS=4
 E_BADARGS=85   # Wrong number of arguments passed to script.
 if [ $# -ne "$ARGS" ]; then
     echo "Usage: $0 HASH_LENGTH FORWARD_FILE REVERSE_FILE ASSEMBLY_NAME"
-    exit $E_BADARGS 
-fi  
+    exit $E_BADARGS
+fi
 
 HASH_LENGTH=$1
 FORWARD_FILE=$2
